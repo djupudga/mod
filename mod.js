@@ -23,6 +23,7 @@
       config.global[config.require] = mod.require
     }
   }
+  // Exporting for testing
   exports._modules = mod._modules,
   exports.define = mod.define,
   exports.require = mod.require,
