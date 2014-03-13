@@ -10,7 +10,7 @@ scripts and keep the global namespace clean. This
 will make code more testable.
 
 Some examples:
-```JavaScript
+```javascript
 // Define a module
 mod.use(function(module, require) {
   // For creating people
