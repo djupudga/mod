@@ -9,6 +9,9 @@
       }
     },
     require: function(module) {
+      if (mod._nodejs) {
+        return require(module)
+      }
       if (!mod._modules[module].executed) {
         mod._modules[module].exported = mod._modules[module].callback()
         mod._modules[module].executed = true
@@ -21,6 +24,9 @@
     expose: function(config) {
       config.global[config.define] = mod.define
       config.global[config.require] = mod.require
+    },
+    nodejs: function(enabled) {
+      mod._nodejs = enabled
     }
   }
   // Exporting for testing
@@ -29,4 +35,5 @@
   exports.require = mod.require,
   exports.use = mod.use,
   exports.expose = mod.expose
+  exports.nodejs = mod.nodejs
 })(typeof exports === 'undefined'? this['mod'] = {}: exports);

@@ -29,3 +29,12 @@ _global.module('bar', function() {
   console.log('mod.expose works!!')
 })
 mod.require('bar')
+
+// nodejs testability
+mod.nodejs(true)
+var util = mod.require('util')
+console.assert(typeof util.isArray === 'function')
+console.log('mod.nodejs works!!')
+console.log('Everything seems to work!!')
+
+console.log('')
