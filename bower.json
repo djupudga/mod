@@ -1,0 +1,28 @@
+{
+  "name": "mod",
+  "main": "mod.js",
+  "version": "0.1.0",
+  "authors": [
+    "Helgi Kristjansson <helgi.kristjansson@gmail.com>"
+  ],
+  "description": "Lightweight dependency management without dependency loading.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "dependency",
+    "require",
+    "module",
+    "browser",
+    "lightweight",
+    "simple"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "mod",
+  "version": "0.1.0",
+  "description": "Lightweight dependency managment without dependency loading.",
+  "main": "./mod.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/djupudga/mod.git"
+  },
+  "keywords": [
+    "dependency",
+    "require",
+    "module",
+    "browser",
+    "lightweight",
+    "simple"
+  ],
+  "author": "Helgi Kristjansson",
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/djupudga/mod/issues"
+  },
+  "homepage": "https://github.com/djupudga/mod",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

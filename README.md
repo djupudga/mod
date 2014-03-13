@@ -1,4 +1,4 @@
 mod
 ===
 
-Lightweight dependency managment without dependency loading.
+Lightweight dependency managment without dependency loading for JavaScript.
