@@ -3,11 +3,21 @@ mod.js
 
 Lightweight dependency managment without dependency loading for JavaScript.
 
+**mod.js**
+- is an experiment.
+- assumes scripts are already loaded
+- and in the correct (dependency) order
+- keeps the global namespace as clutter free as possible
+- helps you manage dependencies in scripts
+- makes your browser scripts more testable
+
 **mod.js** does not load any scripts. It assumes
 that all scripts are loaded. It's only purpose is
 to make it easier to manage dependencies in your
 scripts and keep the global namespace clean. This
-will make code more testable.
+will make code more testable. Testability increases
+when dependencies become clearer and don't rely on
+global objects.
 
 Some examples:
 ```javascript

@@ -11,13 +11,16 @@
 // because of the dependencies. Also,
 // it is not always clear which
 // dependencies a script has.
+//
+// mod.js at least helps in exposing
+// script dependencies
 
 mod.use(function(module, require) {
   module('calculator', function() {
     var underscore = require('underscore')
     var calculator = {
-      add: function() {
-        return underscore.reduce(arguments, function(memo, num) {
+      add: function(numbers) {
+        return underscore.reduce(numbers, function(memo, num) {
           return memo + num
         }, 0)
       },

@@ -14,9 +14,9 @@ mod.use(function(_module, _require) {
   console.log('mod.use works!!')
 })
 
-// Expose it globally (or locally)
+// Attach it globally (or locally)
 var _global = {}
-mod.expose({
+mod.attach({
   require: 'require',
   define: 'module',
   global: _global
@@ -26,7 +26,7 @@ _global.module('bar', function() {
   var foo = _global.require('foo')
   var res = foo()
   console.assert(res === 'hello world')
-  console.log('mod.expose works!!')
+  console.log('mod.attach works!!')
 })
 mod.require('bar')
 
