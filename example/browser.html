@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser App</title>
+  <script src="../mod.js"></script>
+  <script onload="mod.expose('underscore', _)" type="text/javascript" src="bower_components/underscore/underscore.js">
+  </script>
+  <script src="calculator.js"></script>
+  <script type="text/javascript">
+  // App
+  var calculator = mod.require('calculator')
+  function add() {
+    alert('1+2+3+4+5=' + calculator.add(1,2,3,4,5))
+  }
+  function multiply() {
+    alert('1*2*3*4*5=' + calculator.multiply([1,2,3,4,5]))
+  }
+  </script>
+</head>
+<body>
+
+<button onclick="add()">Add</button>
+<button onclick="multiply()">Multiply</button>
+
+</body>
+</html>
